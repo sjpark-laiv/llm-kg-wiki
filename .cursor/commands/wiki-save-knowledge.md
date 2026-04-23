@@ -15,7 +15,7 @@
 
 ## 수행 순서
 
-1. `wiki/`의 기존 `*.md`와 **`wiki/entity/*.md`**, **`wiki/rel/*.md`**, **`wiki/entity-list.md`**(있으면)를 목록화하고, 내용이 겹치는 주제·엔티티가 있으면 읽는다.
+1. **`wiki/entity-list.md`**(허브)를 **한 번만 읽어** 기존 엔티티·rel·주제문서 인덱스를 파악한다. 입력의 **키워드·고유명사**와 표의 **표시명·원인/결과 요약**을 매칭하여 겹치거나 연결 가능한 항목을 식별하고, **해당 파일만 선택적으로 읽는다**. `entity-list.md`가 없거나, 인덱스에 누락이 의심될 때만 `find` 또는 `Glob`으로 보조 탐색한다.
 2. 스킬의 **작성 시점(YAML 프런트매터: `wiki_created`, 필요 시 `wiki_updated`·`content_as_of`)**과 **새 문서 추가 절차**로 초안을 작성한다 (`##` 절, 불릿, 본문용 `---` 구분선은 메타 YAML과 혼동 금지, 용어 통일).
 3. 입력에 **원인→결과·전달 기제·근원/영향**이 있으면 스킬 **「인과관계 구조화」**를 적용한다: **Entity ID 표**, **Causality map**, **`source|edge|target|mechanism_id` 엣지 표**, **`RCA` / `Impact` / `Evidence` 절**(앵커 포함), **의사코드 또는 Mermaid**, 관련 `wiki/*.md`와 **역링크**. 참고 레이아웃: `wiki/oil-price-inflation-causality.md`.
 4. 교차 참조가 필요한 절 앞에 `<a id="..."></a>`를 배치한다 (스킬의 앵커 규칙).
